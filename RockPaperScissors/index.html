@@ -9,16 +9,15 @@
     </head>
     <body>        
         <div class="maincolumns">
-            <button onclick="yourMove('rock')">Rock</button>
+            <button onclick="compare('rock')">Rock</button>
             
-            <button onclick="yourMove('paper')">Paper</button>
+            <button onclick="compare('paper')">Paper</button>
             
-            <button onclick="yourMove('scissors')">Scissors</button>
-            <button onclick="result()">AI?</button>
-            <p>siia kuvada enda käik</p>
+            <button onclick="compare('scissors')">Scissors</button>
+            <p id="mymove"></p>
             
         </div>
-        <div class="maincolumns"><p>Tulemused</p>
+        <div class="maincolumns"><p id="result">Tulemused</p>
             <table style="width:100%">
                 <tr>
                     <th>Wins</th>
@@ -26,15 +25,17 @@
                     <th>Losses</th>
                 </tr>
                 <tr>
-                    <td> muutuja 1</td>
-                    <td> muutuja 2</td>
-                    <td> muutuja 3</td>
+                    <td id="wincount"> muutuja 1</td>
+                    <td id="drawcount"> muutuja 2</td>
+                    <td id="losecount"> muutuja 3</td>
                 </tr>
             </table>
             
         </div>
-        <div class="maincolumns"><p>Vastane</p>
-        siia kuvada vastase käik</div>
+        <div class="maincolumns">
+            <p id="aimove"></p>
+        
+        </div>
 
     
     

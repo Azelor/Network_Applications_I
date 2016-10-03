@@ -1,94 +1,75 @@
-
-/*
-function logic(x, y) {
-    var yourChoice = x;
-    var aiChoice = y;
-    if (aiChoice === 1) {
-        aiChoice = "rock"; 
-    } else if (aiChoice === 2) {
-        aiChoice = "paper"; 
-    } else if (aiChoice === 3) {
-        aiChoice = "scissors"; 
-    }
-}
-*/
+var drawCounter = 0;
+var winCounter = 0;
+var loseCounter = 0;
 
 function compare(c1) {
     var c2 = aiMove();
     if (c1 === "rock") {
+        document.getElementById("mymove").innerHTML = "You chose Rock!";
         if (c2 === "rock") {
-          return "tie";
+            draw();
         }
         else if (c2 === "paper") {
-          return "lose";
+            lose();
         }
         else if (c2 === "scissors") {
-          return "win";
+            win();
         }
     }
     else if (c1 === "paper") {
+        document.getElementById("mymove").innerHTML = "You chose Paper!";
         if (c2 === "rock") {
-          return "win";
+            win();
         }
         else if (c2 === "paper") {
-          return "tie";
+            draw();
         }
         else if (c2 === "scissors") {
-          return "lose";
+            lose();
         }
     }
     else if (c1 === "scissors") {
+        document.getElementById("mymove").innerHTML = "You chose Scissors!";
         if (c2 === "rock") {
-          return "lose";
+            lose();
         }
         else if (c2 === "paper") {
-          return "win";
+            win();
         }
         else if (c2 === "scissors") {
-          return "tie";
+            draw();
         }
     }
+    
 }
     
     
+function draw() {
+    
+    document.getElementById("result").innerHTML = "Draw!";
+    document.getElementById("drawcount").innerHTML = drawCounter += 1;
+}
+function win() {
+    document.getElementById("result").innerHTML = "Win!";
+    document.getElementById("wincount").innerHTML = winCounter += 1;
+}
+function lose() {
+    document.getElementById("result").innerHTML = "Lose!";
+    document.getElementById("losecount").innerHTML = loseCounter += 1;
 }
 
 
 function aiMove() {
     var aiChoice = Math.floor(Math.random()*3)+1;
     if (aiChoice === 1) {
-        aiChoice = "rock"; 
+        aiChoice = "rock";
+        document.getElementById("aimove").innerHTML = "AI chose Rock!";
     } else if (aiChoice === 2) {
-        aiChoice = "paper"; 
+        aiChoice = "paper";
+        document.getElementById("aimove").innerHTML = "AI chose Paper!";
     } else if (aiChoice === 3) {
         aiChoice = "scissors"; 
+        document.getElementById("aimove").innerHTML = "AI chose Scissors!";
     }
     return aiChoice;
 }
-        
-/*
-function result() {
-    var ai = 1;
-    alert("ai");
-    if (ai === 1) { alert("ai chose rock")};
-    else if (ai === 2) { alert("ai chose paper")};
-    else if (ai === 3) { alert("ai chose scissors")};
-}
-
-function yourMove(x) {
-    var move = x;
-    alert("Your move is: " + move);
-    
-}
-
-
-function move(x) {
-    var y = aimove();
-    if (x>y) win="me";
-    else win="ai";
-    var msg = "mina "+x+", ai: "+y+ " win: "+win;
-    alert("mina "+x+", ai: "+y+ " win: "+win);
-    console.log("mina "+x+", ai: "+y+ " win: "+win);
-}
-
-*/
