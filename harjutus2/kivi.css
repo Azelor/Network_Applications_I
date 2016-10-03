@@ -1,0 +1,27 @@
+body {
+    background-color: #eee;
+}
+
+.main {
+    background-color: white;
+    width: 900px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.maincol {
+    width: 270px;
+    display: inline-block;
+    background-color: #ddd;
+    text-align: center;
+    height: 300px;
+    vertical-align: middle;
+    margin: 5px;
+    padding: 5px;
+    
+}
+
+.button {background-color: azure;
+    display: inline-block;
+    
+}

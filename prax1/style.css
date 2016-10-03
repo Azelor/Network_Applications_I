@@ -1,0 +1,56 @@
+/* kommentaar */
+
+body {
+    background: rgba(214, 239, 146, 0.13);
+    font-family: Arial;
+}
+
+
+
+a {
+    background: black;
+    text-decoration: none;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    border-radius: 15px;
+}
+
+a:hover {
+    background: white;
+    color: black;
+    border: 5px;
+}
+
+img {
+    margin: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.kast {
+    background: white;
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.taustapilt {
+    background-image: url("taust.jpg");
+}
+
+#v2line {
+    background: blue;
+
+}
+
+div {
+    margin: 20px;
+}
+
+.taust {
+    background: rgba(165, 214, 32, 0.13);
+}
