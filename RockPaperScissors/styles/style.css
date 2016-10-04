@@ -5,18 +5,20 @@ body {
 
 img {
     height: 70px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border: 0px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);   
+}
+
+table {
+    text-align: center;
 }
 
 .select:hover {
-    opacity: 0.5;
+    opacity: 0.7;    
 }
 
-.main {
-    background-color: white;
-    width: 900px;
-    margin: 10px;
-    padding: 10px;
+.select:active {
+    opacity: 0.5;
 }
 
 .maincolumns {
@@ -24,7 +26,7 @@ img {
     display: inline-block;
     background-color: #ddd;
     text-align: center;
-    height: 300px;
+    height: 270px;
     vertical-align: middle;
     margin: 5px;
     padding: 5px;
@@ -36,6 +38,17 @@ img {
     display: inline-block;
     
 }
+#empty {
+    margin-top: 83px;
+}
+
+#mymove {
+    margin: 10px;
+}
+
+#aimove {
+    margin: 10px;
+}
 
 #aimovepic {
     height: 140px;
@@ -43,4 +56,9 @@ img {
 
 #mymovepic {
     height: 140px;
+}
+
+#result {
+    margin-top: 70px;
+    font-size: 180%;
 }

@@ -66,15 +66,15 @@ function aiMove() {
     var aiChoice = Math.floor(Math.random()*3)+1;
     if (aiChoice === 1) {
         aiChoice = "rock";
-        document.getElementById("aimove").innerHTML = "AI chose Rock!";
+        document.getElementById("aimove").innerHTML = "Computer chose Rock!";
         document.getElementById("aimovepic").src = "images/rock.png";
     } else if (aiChoice === 2) {
         aiChoice = "paper";
-        document.getElementById("aimove").innerHTML = "AI chose Paper!";
+        document.getElementById("aimove").innerHTML = "Computer chose Paper!";
         document.getElementById("aimovepic").src = "images/paper.png";
     } else if (aiChoice === 3) {
         aiChoice = "scissors"; 
-        document.getElementById("aimove").innerHTML = "AI chose Scissors!";
+        document.getElementById("aimove").innerHTML = "Computer chose Scissors!";
         document.getElementById("aimovepic").src = "images/scissors.png";
     }
     return aiChoice;

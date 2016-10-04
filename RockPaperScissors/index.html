@@ -3,7 +3,6 @@
         <meta charset="utf-8">
         <title>Rock, Paper, Scissors game</title>
         <link rel="stylesheet" type="text/css" href="/styles/style.css">
-        <script src="scripts/jquery-3.1.0.min.js"></script>
         <script src="scripts/main.js"></script>
 
     </head>
@@ -13,9 +12,9 @@
             <img class="select" onclick="compare('paper')" src="images/paper.png">
             <img class="select" onclick="compare('scissors')" src="images/scissors.png">
             
-            <div id="mymove"></div>
+            <div id="mymove">You</div>
             <div >
-                <img id="mymovepic" src="images/scissors.png">
+                <img id="mymovepic" src="images/brain.png">
             </div>
             
         </div>
@@ -36,9 +35,10 @@
             
         </div>
         <div class="maincolumns">
-            <p id="aimove"></p>
+            <div id="empty"></div>
+            <div id="aimove">Computer</div>
             <div>
-                <img id="aimovepic" src="images/scissors.png">
+                <img id="aimovepic" src="images/ai.png">
             </div>
         
         </div>
