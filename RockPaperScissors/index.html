@@ -9,15 +9,18 @@
     </head>
     <body>        
         <div class="maincolumns">
-            <button onclick="compare('rock')">Rock</button>
+            <img class="select" onclick="compare('rock')" src="images/rock.png">
+            <img class="select" onclick="compare('paper')" src="images/paper.png">
+            <img class="select" onclick="compare('scissors')" src="images/scissors.png">
             
-            <button onclick="compare('paper')">Paper</button>
-            
-            <button onclick="compare('scissors')">Scissors</button>
-            <p id="mymove"></p>
+            <div id="mymove"></div>
+            <div >
+                <img id="mymovepic" src="images/scissors.png">
+            </div>
             
         </div>
-        <div class="maincolumns"><p id="result">Tulemused</p>
+        <div class="maincolumns">
+            <p id="result">Results</p>
             <table style="width:100%">
                 <tr>
                     <th>Wins</th>
@@ -25,15 +28,18 @@
                     <th>Losses</th>
                 </tr>
                 <tr>
-                    <td id="wincount"> muutuja 1</td>
-                    <td id="drawcount"> muutuja 2</td>
-                    <td id="losecount"> muutuja 3</td>
+                    <td id="wincount">0</td>
+                    <td id="drawcount">0</td>
+                    <td id="losecount">0</td>
                 </tr>
             </table>
             
         </div>
         <div class="maincolumns">
             <p id="aimove"></p>
+            <div>
+                <img id="aimovepic" src="images/scissors.png">
+            </div>
         
         </div>
 

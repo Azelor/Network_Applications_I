@@ -6,6 +6,7 @@ function compare(c1) {
     var c2 = aiMove();
     if (c1 === "rock") {
         document.getElementById("mymove").innerHTML = "You chose Rock!";
+        document.getElementById("mymovepic").src = "images/rock.png";
         if (c2 === "rock") {
             draw();
         }
@@ -18,6 +19,7 @@ function compare(c1) {
     }
     else if (c1 === "paper") {
         document.getElementById("mymove").innerHTML = "You chose Paper!";
+        document.getElementById("mymovepic").src = "images/paper.png";
         if (c2 === "rock") {
             win();
         }
@@ -30,6 +32,7 @@ function compare(c1) {
     }
     else if (c1 === "scissors") {
         document.getElementById("mymove").innerHTML = "You chose Scissors!";
+        document.getElementById("mymovepic").src = "images/scissors.png";
         if (c2 === "rock") {
             lose();
         }
@@ -64,12 +67,15 @@ function aiMove() {
     if (aiChoice === 1) {
         aiChoice = "rock";
         document.getElementById("aimove").innerHTML = "AI chose Rock!";
+        document.getElementById("aimovepic").src = "images/rock.png";
     } else if (aiChoice === 2) {
         aiChoice = "paper";
         document.getElementById("aimove").innerHTML = "AI chose Paper!";
+        document.getElementById("aimovepic").src = "images/paper.png";
     } else if (aiChoice === 3) {
         aiChoice = "scissors"; 
         document.getElementById("aimove").innerHTML = "AI chose Scissors!";
+        document.getElementById("aimovepic").src = "images/scissors.png";
     }
     return aiChoice;
 }

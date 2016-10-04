@@ -1,5 +1,15 @@
 body {
     background-color: #eee;
+    font-family: sans-serif;
+}
+
+img {
+    height: 70px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.select:hover {
+    opacity: 0.5;
 }
 
 .main {
@@ -18,10 +28,19 @@ body {
     vertical-align: middle;
     margin: 5px;
     padding: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     
 }
 
 .button {background-color: azure;
     display: inline-block;
     
+}
+
+#aimovepic {
+    height: 140px;
+}
+
+#mymovepic {
+    height: 140px;
 }
